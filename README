@@ -1,0 +1,35 @@
+This repository contains an implementation of the cryptographic
+encrypt-to-self primitive introduced in 2020 by Pijnenburg and
+Poettering.
+
+Corresponding academic treatments of the encrypt-to-self primitive can
+be found in:
+
+* https://eprint.iacr.org/2020/847
+* Pijnenburg and Poettering: "Encrypt-to-self: Securely Outsourcing Storage"
+  (ESORICS'20)
+* Pijnenburg and Poettering: "Efficiency Improvements for Encrypt-to-Self"
+  (CYSARM'20)
+
+
+The implementation is based on the compression functions of SHA256,
+SHA512, and BLAKE2. By default the authors recommend using the BLAKE2
+based implementation.
+
+
+For a usage example see example.c in the current directory. Compile
+and run it as follows:
+
+$  make -C src
+$  make example
+$  ./example
+
+
+To run the selftests:
+
+$  make -C src
+$  make -C test
+$  test/sha256cf_selftest
+$  test/sha512cf_selftest
+$  test/blake2cf_selftest
+$  test/ets_selftest

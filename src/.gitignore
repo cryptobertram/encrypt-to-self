@@ -1,0 +1,6 @@
+blake2cf.o
+blake2ets.o
+sha256cf.o
+sha256ets.o
+sha512cf.o
+sha512ets.o

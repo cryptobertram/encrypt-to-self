@@ -1,0 +1,4 @@
+sha256cf_selftest
+sha512cf_selftest
+blake2cf_selftest
+ets_selftest
