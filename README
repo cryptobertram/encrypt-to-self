@@ -5,12 +5,14 @@ Poettering.
 Corresponding academic treatments of the encrypt-to-self primitive can
 be found in:
 
-* https://eprint.iacr.org/2020/847
-* Pijnenburg and Poettering: "Encrypt-to-self: Securely Outsourcing Storage"
-  (ESORICS'20)
-* Pijnenburg and Poettering: "Efficiency Improvements for Encrypt-to-Self"
-  (CYSARM'20)
-
+* "Encrypt-to-self: Securely Outsourcing Storage"
+  by Pijnenburg and Poettering, ESORICS'20.
+  Published version: https://doi.org/10.1007/978-3-030-58951-6_31
+  Open access version: https://eprint.iacr.org/2020/847
+* "Efficiency Improvements for Encrypt-to-Self"
+  by Pijnenburg and Poettering, CYSARM'20.
+  Published version: https://doi.org/10.1145/3411505.3418438
+  Open access version: https://arxiv.org/abs/2009.02667
 
 The implementation is based on the compression functions of SHA256,
 SHA512, and BLAKE2. By default the authors recommend using the BLAKE2
